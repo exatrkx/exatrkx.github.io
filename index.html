@@ -42,10 +42,13 @@ FNAL, SLAC, accelerator, physics, particle physics, hadron collider, CERN, ATLAS
 
 <div class="entry">      
     <div class="txt">
-	    Exa.TrkX is a DOE CompHEP project that will scale up the optimization, 
-	    performance, and validation studies of ML tracking models to unprecedented levels, enabling HEP to develop 
-	    production-quality tracking that runs efficiently on the next generation of hybrid-accelerated computing
-	    architectures, from the experiments online triggering systems to DOE exascale-class HPC systems.
+          Reconstructing the trajectories of thousands of charged particles from a collision event as they fly through a HEP detector
+	  is a combinatorially hard pattern recognition problem. Exa.TrkX, a DOE CompHEP project and a collaboration of data scientists and computational 
+	  physicists from the ATLAS, CMS, and DUNE experiments, is developing Graph Neural Network models aimed at reconstructing millions of particle trajectories per second 
+	  from Petabytes of raw data produced by the next generation of detectors at the Energy and Intensity Frontiers. 
+	  Exa.TrkX is also exploring the scaling of distributed training of GNN models on DOE pre-exascale systems and the deployment 
+	  of GNN models with microsecond latencies on FPGA-based real-time processing systems.  
+
   </div>
     <div class="desc">
     <a target="new" name="abstract">summary</a>
@@ -58,7 +61,10 @@ FNAL, SLAC, accelerator, physics, particle physics, hadron collider, CERN, ATLAS
 
 <div class="entry">
 <div class="txt">
-
+<figure>
+<img src="xiangyang movie.gif">
+<figcaption>Performance of a track seeding Graph Neural Network as a function of the message-passing iteration.</figcaption>
+</figure>
 <ul>
 	<li> <A HREF="https://github.com/exatrkx"> Exa.TrkX github (public code, artifacts)</a></li>	
 </ul>
@@ -91,15 +97,17 @@ FNAL, SLAC, accelerator, physics, particle physics, hadron collider, CERN, ATLAS
 <div class="entry">
 <div class="txt">
 
-<ul>
 
-<li> <A HREF="http://heptrkx.github.io/">The HEP.TrkX Project</A> 
-<li> aCTS  <a href="https://gitlab.cern.ch/acts/a-common-tracking-sw"> a Common Tracking Software </a> </li>
-<li> <A HREF="https://www.nersc.gov/research-and-development/data-analytics/big-data-center/"> NERSC Big Data center</a></li>
-<li> <A HREF="https://competitions.codalab.org/competitions/20112">The TrackML Challenge</A>
-	 
 
-</ul>
+Exa.TrkX is a follow-up to the <A HREF="http://heptrkx.github.io/">the HEP.TrkX pilot project</A>. 
+It relies on the  <a href="https://gitlab.cern.ch/acts/a-common-tracking-sw">aCTS</a> toolkit to simulate a generic HL-LHC detector, 
+and more recently to benchmark the performance of its models.
+	
+Exa.TrkX is collaborating with the <A HREF="https://fastmachinelearning.org/">FastML Lab</a> to deploy GNN models 
+on FPGA systems. Exa.TrkX is also collaborating with the <A HREF="https://www.nersc.gov/research-and-development/data-analytics/big-data-center/"> NERSC Big Data center</a>, 
+and the <A HREF="https://www.exascaleproject.org/ecp-announces-new-co-design-center-to-focus-on-exascale-machine-learning-technologies/"> Exalearn co-design center</a>
+to demonstrate distributed training and model hyperparameter optimization at scale on HPC systems. 
+
 </div>
 <div class="desc"> collaborators, partners & toolkits
 </div>
